@@ -1,8 +1,15 @@
 <h1>Welcome to Strongify!</h1>
+<div class="ui segment">
+  <div class="ui two column very relaxed grid">
+    <div class="column">
 <ul>
-
-
+<li>Strongify lets you plan your workouts for the week</li>
+<li>Create and add new exercises to your workouts</li>
+<li>View and update your workout routine</li>
+<li><%= link_to "Click here to Sign Up", new_user_path %></li>
 </ul>
+</div>
+<div class="column">
 <h3>Login</h3>
 <% if @message %>
   <h2>Errors</h2>
@@ -24,6 +31,8 @@
      Login </button>
 <% end %>
 </div>
+
 </div>
-<br>
-<%= link_to "Create an Account", new_user_path %>
+</div>
+</div>
+<div class="ui vertical divider">Or</div>
